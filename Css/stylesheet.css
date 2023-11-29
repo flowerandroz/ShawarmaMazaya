@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@300;400;500&display=swap');
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+
+}
+/* Navigation styles */
+
+.logo img {
+  max-width: 20%;
+  height: auto;
+  margin-right: 18.75rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+  margin-right: 10px;
+  color:white
+}
+
+/* Navigation styles */
+.nav-links {
+  list-style:none;
+  display: none;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color:black;
+  padding: 20px;
+}
+
+.nav-links li {
+  margin-right:15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease; 
+  padding:20px;
+}
+.nav-links a:hover{
+  background-color: #be1218;; 
+  color: white; 
+}
+
+/* Hero styles */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/heroimage.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  animation:fadeIn 1.5s ease-out forwards;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.hero h1 {
+  font-size:35px ;
+  margin-bottom: 20px;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E91C24;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family:'Montserrat', sans-serif; 
+}
+.btn:hover{
+  background-color: #be1218;
+}
+
+/* Gallery Style */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.gallery h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+
+.color1 {
+  color:  #E91C24;
+}
+
+.color2 {
+  color: black;
+}
+.gallery p{
+  font-size: 15px;
+  color:black;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600;
+  text-align: center;
+  margin-left: 5px;
+  margin-right:5px;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.product:hover {
+  transform: scale(1.1);
+}
+
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  text-align: left;
+}
+
+.product-info p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  
+}
+
+.arrow {
+  font-size: 2em;
+  color: #E91C24;
+  cursor: pointer;
+  text-align: right;
+}
+
+.arrow:hover {
+  color: #be1218;
+}
+.product:hover .product-info {
+  display: block;
+}
+/*Button icon for wrap.html page*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E91C24;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family:'Montserrat', sans-serif; 
+}
+.button:hover{
+  background-color: #be1218;
+}
+
+/* Footer Style */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-logo img {
+  max-width: 50%;
+  height: auto;
+}
+.footer-section {
+  width: 30%;
+  padding: 8px;
+  margin-right: 40px;
+}
+
+.footer-section h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  font-weight: bolder;
+  font-family: 'Atkinson Hyperlegible', sans-serif; 
+}
+
+.footer-section p {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Responsive styles */
+/* if the screen is less than 768px wide, run this css */
+@media only screen and (max-width: 768px) {
+
+  .product {
+    width:90%;
+  }
+  .menu-icon {
+      display: block;
+  }
+
+  .show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      z-index: 9999;
+  }
+
+  /* .nav-links ul {
+      padding: 10px;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  } */
+}
+@media only screen and (min-width: 769px) {
+  .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .logo img {
+    max-width: 8%;
+    height: 8%;
+    margin-right: 1000px;
+    text-align: left;
+  }
+
+  .hero {
+    width: 100%;
+    height:100%;
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .product {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+
+   
+        
+     
+  
+    @media screen and (max-width: 768px) {
+      .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          padding: 10px 0;
+      }
+  
+      .nav-links.show {
+          display: flex;
+      }
+  
+      .nav-links li {
+          margin: 0;
+          text-align: center;
+      }
+  
+      .menu-icon {
+          display: block;
+      }
+  }
+  
+ 
+    
+ 
